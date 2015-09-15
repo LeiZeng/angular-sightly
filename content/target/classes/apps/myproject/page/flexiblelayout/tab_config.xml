@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Layout">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <siteconfig
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                 <headerAndFooter
+                    	jcr:primaryType="cq:Widget"
+                    	fieldLabel="Layout"
+                    	name="./layout"
+                    	xtype="pathfield"/> 
+           </items>
+        </siteconfig>
+    </items>
+</jcr:root>

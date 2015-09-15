@@ -1,0 +1,11 @@
+<div data-sly-test="${wcmmode.edit && !properties.address}">
+	Please specify the address
+</div>
+
+<div class="address" data-sly-use.geocode="com.mycompany.myproject.components.LatLongComponent">
+	<div class="latlong">
+		Lat : ${geocode.coordinates.lat}, Long : ${geocode.coordinates.getLng}
+	</div>
+	<div class="addressDescrption" data-sly-text="${properties.address || geocode.DEFAULT}">
+	</div>
+</div>

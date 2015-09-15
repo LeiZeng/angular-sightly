@@ -1,0 +1,10 @@
+<template data-sly-template.page="${ withParsys }">
+<div class="content" style="background-color:red;" >
+	LAYOUT 1
+	<h1>${currentPage.title}</h1>
+	<div
+		data-sly-test="${ withParsys != 'false' }" 
+		data-sly-resource="${'par' @ resourceType='foundation/components/parsys'}">
+	</div>
+</div>
+</template>

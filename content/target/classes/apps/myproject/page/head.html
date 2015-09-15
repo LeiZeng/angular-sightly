@@ -1,0 +1,20 @@
+<meta data-sly-test="${!wcmmode.disabled}" data-sly-include="author.html" data-sly-unwrap></meta>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="${currentPage.tags}">
+<meta name="description" content="${currentPage.description}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+
+<meta
+	data-sly-use.externalizer="${ 'com.mycompany.myproject.components.ExternalUrl' @ path=currentPage.path}" 
+	property="og:url" content="${externalizer.absoluteUrl @ context='uri'}.html" />
+
+
+<title data-sly-use.header="${'com.mycompany.myproject.components.Header' @ pageTitle=currentPage.title, subTitle=inheritedPageProperties.subtitle }">${header.title}</title>
+
+<!--/** needed for cloudservices like DTM  **/-->    
+<meta data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" data-sly-unwrap/>
+<meta data-sly-call="${clientLib.all @ categories='apps.angular.header'}" data-sly-unwrap></meta>

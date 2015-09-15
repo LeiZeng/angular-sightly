@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1442322051803
+Build-Jdk: 1.8.0_60
+Built-By: leizeng
+Bundle-Description: Maven Multimodule project for My Project.
+Bundle-ManifestVersion: 2
+Bundle-Name: My Project Bundle
+Bundle-SymbolicName: my-group-id.myproject-bundle
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mycompany.myproject.bindings;uses:="com.day.cq.wcm.a
+ pi,com.mycompany.myproject.components,org.apache.sling.scripting.api,co
+ m.adobe.cq.sightly,javax.script";version="1.0.0.SNAPSHOT",com.mycompany
+ .myproject.components;uses:="javax.annotation,org.apache.sling.models.a
+ nnotations,org.apache.sling.api,javax.inject,com.day.cq.wcm.api,com.day
+ .cq.commons,org.apache.commons.lang,com.adobe.cq.address.api.location,c
+ om.adobe.cq.address.api,org.apache.sling.api.resource";version="1.0.0.S
+ NAPSHOT"
+Import-Package: com.adobe.cq.address.api;version="[1.0,2)",com.adobe.cq.
+ address.api.location;version="[1.0,2)",com.adobe.cq.sightly;version="[2
+ .2,3)",com.day.cq.commons;version="[5.7,6)",com.day.cq.wcm.api;version=
+ "[1.2,2)",javax.annotation,javax.inject;version="[0.0,1)",javax.script,
+ org.apache.commons.lang;version="[2.5,3)",org.apache.sling.api;version=
+ "[2.1,3)",org.apache.sling.api.resource;version="[2.1,3)",org.apache.sl
+ ing.models.annotations;version="[1.0,2)",org.apache.sling.scripting.api
+ ;version="[2.2,3)"
+Service-Component: OSGI-INF/serviceComponents.xml
+Sling-Model-Packages: com.mycompany.myproject.components
+Tool: Bnd-1.50.0

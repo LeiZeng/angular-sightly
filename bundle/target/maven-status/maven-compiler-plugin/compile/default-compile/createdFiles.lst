@@ -1,0 +1,7 @@
+com/mycompany/myproject/components/Header.class
+com/mycompany/myproject/components/ExternalUrl.class
+com/mycompany/myproject/components/LatLongComponent.class
+com/mycompany/myproject/components/MyCustomPage.class
+com/mycompany/myproject/components/MenuComponent.class
+com/mycompany/myproject/bindings/CustomBindingProvider.class
+com/mycompany/myproject/components/ContentComponent.class
